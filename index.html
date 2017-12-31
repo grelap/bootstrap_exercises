@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bootstrap - zadanie 5.5</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<!--navigation-->
+		<nav class="navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--logo-->
+					<a class="navbar-brand" href="#">  
+						<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Logo 
+						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">O nas</a></li>
+						<li><a href="#">Oferta</a></li>
+						<!--first dropdown-->
+						<li class="dropdown">					
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cennik <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Produkt 1</a></li>
+								<li><a href="#">Produkt 2</a></li>
+								<li><a href="#">Produkt 3</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Produkt 4</a></li>
+							</ul>
+						</li>
+						<!--second dropdown-->
+						<li class="dropdown">					
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teksty <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Pan Tadeusz</a></li>
+								<li><a href="#">Nowomowa</a></li>
+								<li><a href="#">Kant. Rozprawa...</a></li>	
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Kontakt</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- carousel section-->
+	<section class="carousel">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators"> 
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
+							<li data-target="#myCarousel" data-slide-to="1"></li> 
+							<li data-target="#myCarousel" data-slide-to="2"></li> 
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+							<li data-target="#myCarousel" data-slide-to="4"></li> 
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="item active example-1">
+								<img src="https://static.pexels.com/photos/314380/pexels-photo-314380.jpeg" alt="city 1">
+								<div class="carousel-caption">
+									<h3>Popdis pod zdjęciem nr 1</h3>
+									<p>Incididunt ea officia tempor cillum aute.</p>
+								</div>
+							</div> 
+							<div class="item example-2">
+								<img src="https://static.pexels.com/photos/315939/pexels-photo-315939.jpeg" alt="city 2">
+								<div class="carousel-caption">
+									<h3>Popdis pod zdjęciem nr 2</h3>
+									<p>Incididunt ea officia tempor cillum aute.</p>
+								</div>
+							</div> 
+							<div class="item example-3"> 
+								<img src="https://static.pexels.com/photos/336413/pexels-photo-336413.jpeg" alt="city 3">
+								<div class="carousel-caption">
+									<h3>Popdis pod zdjęciem nr 3</h3>
+									<p>Incididunt ea officia tempor cillum aute.</p>
+								</div>	
+							</div> 
+							<div class="item example-4">
+								<img src="https://static.pexels.com/photos/311621/pexels-photo-311621.jpeg" alt="city 4">
+								<div class="carousel-caption">
+									<h3>Popdis pod zdjęciem nr 4</h3>
+									<p>Incididunt ea officia tempor cillum aute.</p>
+								</div>
+							</div>
+							<div class="item example-5">
+								<img src="https://static.pexels.com/photos/213696/pexels-photo-213696.jpeg" alt="city 5">
+								<div class="carousel-caption">
+									<h3>Popdis pod zdjęciem nr 5</h3>
+									<p>Incididunt ea officia tempor cillum aute.</p>
+								</div>
+							</div> 
+						</div>
+						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+							<span class="sr-only">Previous</span> 
+						</a> 
+						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> 
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span> 
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	<!--tabs section-->
+	<section class="tabs">
+		<div class="container">
+			<div class="row">
+				<h2 class="text-center">Trochę tekstu</h2>
+				<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-sm-offset-1">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active in"><a href="#tekst1" aria-controls="tekst1" role="tab" data-toggle="tab">Pan Tadeusz</a></li>
+						<li role="presentation"><a href="#tekst2" aria-controls="tekst2" role="tab" data-toggle="tab">Nowomowa</a></li>
+						<li role="presentation"><a href="#tekst3" aria-controls="tekst3" role="tab" data-toggle="tab">Kant. Rozprawa...</a></li>
+						<li role="presentation"><a href="#tekst4" aria-controls="tekst4" role="tab" data-toggle="tab">Lorem</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade active in" id="tekst1">
+							<p>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Nazywał się i Hrabia ma narowu, Żałował, że spudłuje. szarak, gracz nie siedzi Rejtan żałośny po zadzwonieniu na szaraki! Za moich, panie, czasów w ręku trzyma obyczajem pańskim i stanęły: tak się trzeba, i on znowu w paryskich kawiarniach. Bo nie ustawiał a resztę rozdzielono między rzędem stały spisane sprawy, które mógłby spójrzeć bez litości wsiedli spór był to mówiąc, że się ukłoni i pończoszki. Na piasku drobnym, suchym, białym w jeden się od płaczu! On wolał z Polski trzech mocarzów albo sam na wybór wziął tytuł demokraty. Wreszcie po świeci jeździ wenecki diabeł w pułku gadano, jak korona na ścianach wisiały. Tu owiec trzoda becząc w kraty. Pas taki można wydrukować wszystkie złośliwe, ostre. Dawniej na łowach niż we dworskim budynku młodzież czekają. Pójdziemy, jeśli nasza młodzie wyjeżdża za nim. Sława czynów tylu panów rozmów trwała już jej ubrani nagotowane z woźnym Protazym ze cztery. Tymczasem na przeciwnej zajadłość dowiodę, że przymiotów jego nie wierzono rzeczom najdawniejszym w powiecie. Lubił bardzo dobitnie malował. Był dawniej było gorąca). wachlarz pozłocist powiewając rozlewał deszcz.</p>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="tekst2">
+							<p>Drogi Marszałku, Wysoka Izbo. PKB rośnie. Nie zapominajmy jednak, że rozpoczęcie powszechnej akcji kształtowania podstaw pomaga w określaniu odpowiednich warunków administracyjno-finansowych. Jest dobrze. Różnorakie i miejsce szkolenia kadr powoduje docenianie wag systemu szkolenia kadr przedstawia interpretującą próbę sprawdzenia systemu powszechnego uczestnictwa. W ten sposób realizacja określonych zadań stanowionych przez organizację. Proszę państwa, inwestowanie w tym zakresie ukazuje nam efekt systemu finansowego wymaga sprecyzowania i miejsce szkolenia kadry odpowiadającego potrzebom.</p>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="tekst3">
+							<p>Początek traktatu czasu panowania Fryderyka Wielkiego, Króla Pruskiego żył w miejscu umieścił, mają niezmierną wartość lub myśli, które właśnie domyślamy się mocą swojej natury tworów Boskich jest w biegu rzeczy np. w ludzie; w Warszawie w przeciwnym razie niebyłoby najwyższego dobra. Ideał, czyli ścieśniony. Gdyby człowiek o bytności innej rzeczy, lecz pierwsze krzewienie się w przedmowach do zwierzęcości należących, które przypuściemy, będzie szczęśliwym, ale ustawy, która niemoże być oznaczoną. J owszem szczęśliwość tworów, które się było spodziewać zawdzięczającej nagrody, kiedy kto inszy w takim razie kiedy my to przyczytane, coby było o ile jego doła? Oto usterki, uchybienia i uchyliłaby wszelką możliwość. Oprócz możliwości i sądzenia. Kiedy się może np. biednego. Powie mi wypadek nie byłaby naszą ziemię w rzeczy np. rzeczpospolita Platona? Bynajmniej; bo słówka jo, ja, je ukarać.</p>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="tekst4">
+							<p>Lorem ipsum dolor sit amet sapien dui quis massa. Duis non nunc. Donec odio id enim. Aliquam tempus purus. Praesent feugiat. Proin quis est. Vestibulum tortor a dolor. Nam consectetuer ut, magna. Vestibulum at turpis egestas. Phasellus vulputate sed, erat. In hac habitasse platea dictumst. Quisque eu aliquam tellus tincidunt leo ac risus. Etiam ut tellus sit amet, volutpat laoreet. Aenean ligula. Pellentesque ornare nulla mi, nec augue. Nam laoreet sapien. Proin lacus. Quisque iaculis, turpis egestas. Suspendisse eu mauris. Praesent tortor nibh, dictum arcu. Etiam commodo est et felis vitae imperdiet quis, lacinia lacus. Nunc a nunc. Nunc at urna eu eros.</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<!--modal section-->
+	<section class="info-modal">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 center-block">
+					<h2 class="text-center">Zobacz więcej informacji na temat strony</h2>
+					<button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>  Naciśnij ten guzik </button>
+					<div id="myModal" class="modal fade" role="dialog"> 
+						<div class="modal-dialog"> 
+							<div class="modal-content">
+								<div class="row">
+									<div class="col-xs-offset-10 col-xs-2 text-right">
+										<button type="button" class="btn btn-default btn-sm" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+									</div> 
+								</div>
+								<div class="modal-header"> 	
+									<h3>Witam w okienku modalnym</h3> 
+								</div> 
+								<div class="modal-body"> 
+									<p>Strona zawiera kilka przykładów wykorzystania <strong>komponentów Boostrapa</strong>. Na początek zafiksowany <strong>navbar</strong> w którym odnajedziemy dropdown menu, następnie <strong>carousel</strong> z pięcioma zdjęciami przedstawiającymi miasto nocą. Kolejnym elementem strony jest <strong>menu</strong> wykonane za pomocą komponentu tabs. Na koniec mamy możliwość zapoznania się z wyskakującym <strong>okienkiem modalnym</strong>.</p>
+								</div> 
+								<div class="modal-footer"> 
+									<p>Copyright by bootcamp 2017</p>
+								</div>
+							</div> 
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="row">
+			<div class="col-xs-12">
+				<h4 class="text-center">Copyright by bootcamp 2017</h4>
+			</div>
+		</div>
+	</footer>
+	<!--bootstrap js-->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
