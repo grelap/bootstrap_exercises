@@ -1,2 +1,4 @@
 # some bootstrap exercises
 
+demo:
+
